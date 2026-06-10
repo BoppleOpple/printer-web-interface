@@ -3,6 +3,7 @@
   --text-h: #08060d;
   --bg: #fff;
   --border: #e5e4e7;
+  --fg: #020104;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -11,8 +12,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -32,10 +33,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --sidebar-width: 150px;
+
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
     --border: #2e303a;
+    --fg: #080210;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -43,6 +47,8 @@
     --social-bg: rgba(47, 48, 58, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --shadow-right:
+      rgba(0, 0, 0, 0.4) 10px 0 15px -3px, rgba(0, 0, 0, 0.25) 4px 0 6px -2px;
   }
 
   #social .button-icon {
@@ -60,6 +66,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  justify-items: stretch;
 }
 
 body {

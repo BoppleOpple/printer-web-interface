@@ -1,0 +1,43 @@
+.sidebar {
+  min-width: var(--sidebar-width);
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+
+  background-color: var(--bg);
+  border-right: 1px solid var(--border);
+  box-shadow: var(--shadow-right);
+}
+
+.sidebar-action {
+  background-color: var(--fg);
+  border: 2px solid var(--border);
+  border-radius: 5px;
+
+  margin: 2px;
+  height: 30px;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px double var(--border);
+}
+
+.expand-shrink-button {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px;
+  border-style: none;
+  border-radius: 5px;
+}

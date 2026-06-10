@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  padding: 5px;
+
+  background-color: var(--bg);
+  border-bottom: 2px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: min-content;
+}
+
+.settings-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: min-content;
+}
+
+.navbar-icon {
+  width: 40px;
+  height: 40px;
+  width: auto;
+  padding-right: 5px;
+}
+
+.navbar-right {
+  display: flex;
+}
