@@ -1,0 +1,39 @@
+.status-indicator {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.status-success {
+  background-color: hsl(from var(--status-success) h s calc(l * 0.8));
+  border-color: var(--status-success);
+}
+
+.status-fail {
+  background-color: hsl(from var(--status-fail) h s calc(l * 0.8));
+  border-color: var(--status-fail);
+}
+
+.status-cancelled {
+  background-color: hsl(from var(--status-cancelled) h s calc(l * 0.8));
+  border-color: var(--status-cancelled);
+}
+
+.status-pending {
+  background-color: hsl(from var(--status-pending) h s calc(l * 0.8));
+  border-color: var(--status-pending);
+}
+
+.status-running {
+  background-color: hsl(from var(--status-running) h s calc(l * 0.8));
+  border-color: var(--status-running);
+}
+
+.status-other {
+  background-color: hsl(from var(--status-other) h s calc(l * 0.8));
+  border-color: var(--status-other);
+}
