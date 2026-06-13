@@ -32,7 +32,7 @@
   height: min-content;
 }
 
-.foldable-list-item {
+.foldable-section-contents > * {
   padding: 4px;
   border-bottom: 1px solid var(--border);
 }

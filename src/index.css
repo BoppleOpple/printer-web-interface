@@ -49,6 +49,12 @@
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
     --shadow-right:
       rgba(0, 0, 0, 0.4) 10px 0 15px -3px, rgba(0, 0, 0, 0.25) 4px 0 6px -2px;
+    --status-success: #00c310;
+    --status-fail: #9d0d0d;
+    --status-cancelled: #8b8b8b;
+    --status-pending: #eaaf0e;
+    --status-running: #0d85e1;
+    --status-other: #fff;
   }
 
   #social .button-icon {
@@ -115,4 +121,9 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
 }
