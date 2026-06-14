@@ -16,7 +16,7 @@ function FoldableSection({ name, children = null }): ReactElement {
       <div className="foldable-section-header">
         <p>{name}</p>
         <button
-          className="expand-shrink-button"
+          className="image-button expand-shrink-button"
           onClick={() => setExpanded(!expanded)}
         >
           <img src={expanded ? expandedIcon : shrunkIcon} />

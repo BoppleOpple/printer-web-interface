@@ -28,16 +28,3 @@
 
   border-bottom: 1px double var(--border);
 }
-
-.expand-shrink-button {
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-
-  align-items: center;
-  justify-content: center;
-
-  padding: 2px;
-  border-style: none;
-  border-radius: 5px;
-}

@@ -8,10 +8,12 @@ import ClockIcon from "../assets/MISSING.png";
 
 interface JobListProps {
   jobs: Array<Job>;
+  onSelectJob: CallableFunction;
 }
 
 interface JobEntryProps {
   job: Job;
+  onClick: CallableFunction;
 }
 
 function _formatDate(date: Date): string {
@@ -23,9 +25,9 @@ function _formatTime(date: Date): string {
   return `${date.getHours().toString().padStart(2, "0")}:${date.getMinutes().toString().padStart(2, "0")}:${date.getSeconds().toString().padStart(2, "0")}`;
 }
 
-function JobEntry({ job }: JobEntryProps): ReactElement {
+function JobEntry({ job, onClick }: JobEntryProps): ReactElement {
   return (
-    <a className="job-entry">
+    <a className="job-entry" onClick={() => onClick()}>
       <StatusIndicator status={job.status} />
       <div className="job-entry-center-matter">
         <p>{job.name}</p>
@@ -44,7 +46,7 @@ function JobEntry({ job }: JobEntryProps): ReactElement {
   );
 }
 
-function JobList({ jobs }: JobListProps): ReactElement {
+function JobList({ jobs, onSelectJob }: JobListProps): ReactElement {
   const contents: Map<string, Array<ReactElement | string>> = new Map([
     ["Successful", []],
     ["Failure", []],
@@ -66,7 +68,7 @@ function JobList({ jobs }: JobListProps): ReactElement {
   jobs.forEach((job: Job) => {
     const categoryArray: Array<ReactElement | string> =
       contents.get(job.status) || contents.get("Other");
-    categoryArray.push(<JobEntry job={job} />);
+    categoryArray.push(<JobEntry job={job} onClick={() => onSelectJob(job)} />);
   });
 
   return <FoldableList contents={contents} order={categoryOrder} />;

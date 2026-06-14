@@ -1,0 +1,52 @@
+.screen-block {
+  display: block;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+
+  background-color: #0004;
+}
+
+.subview-content {
+  display: block;
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: 10%;
+  right: 10%;
+  padding: 10px;
+
+  background-color: var(--bg);
+  overflow: scroll;
+
+  border-radius: 10px;
+  border: 2px solid var(--border);
+}
+
+.subview-head {
+  display: flex;
+  height: fit-content;
+
+  justify-content: center;
+
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.subview-head h1 {
+  margin: 0px;
+
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.subview-close-button {
+  float: left;
+}
+
+.subview-close-button > img {
+  width: 40px;
+  height: 40px;
+}

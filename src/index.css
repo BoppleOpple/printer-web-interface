@@ -69,10 +69,6 @@
   text-align: center;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-items: stretch;
 }
 
 body {
@@ -126,4 +122,21 @@ code {
 .label-container {
   display: flex;
   align-items: center;
+}
+
+.image-button {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.spacer {
+  flex-grow: 1;
 }
